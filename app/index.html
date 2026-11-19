@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V12 Neon Heist — GTA VI Cover Art Maker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo"><span class="six">6</span> V12 NEON HEIST</div>
+  <div class="sub">GTA VI-style cover maker · photos stay on your machine · offline</div>
+</header>
+
+<main class="layout">
+  <section class="stage">
+    <canvas id="preview" width="640" height="640" aria-label="Cover preview"></canvas>
+    <p id="sizeNote" class="size-note">1080 × 1080 · live preview</p>
+    <div class="actions">
+      <button id="exportBtn" class="primary" type="button">Export PNG</button>
+      <button id="randomBtn" type="button">Shuffle grade</button>
+    </div>
+    <ol class="steps">
+      <li>Add up to 4 photos (or load the samples).</li>
+      <li>Pick a layout, a grade and a post size.</li>
+      <li>Edit the title + tagline, then Export PNG.</li>
+    </ol>
+  </section>
+
+  <aside class="controls">
+    <section class="card">
+      <h2>Photos</h2>
+      <label class="file-btn">Choose photos…
+        <input id="photoInput" type="file" accept="image/*" multiple hidden>
+      </label>
+      <button id="sampleBtn" type="button">Load sample photos</button>
+      <button id="clearBtn" type="button">Clear photos</button>
+      <div id="panelList" class="chips"></div>
+      <p class="hint">Click a panel chip, then crop it below. One photo can fill every panel; several photos fill them one each.</p>
+    </section>
+
+    <section class="card">
+      <h2>Crop selected panel</h2>
+      <label>Zoom <span id="zoomVal">100%</span>
+        <input id="zoom" type="range" min="1" max="3" step="0.05" value="1">
+      </label>
+      <label>Position X <span id="posXVal">0</span>
+        <input id="posX" type="range" min="-1" max="1" step="0.05" value="0">
+      </label>
+      <label>Position Y <span id="posYVal">0</span>
+        <input id="posY" type="range" min="-1" max="1" step="0.05" value="0">
+      </label>
+    </section>
+
+    <section class="card">
+      <h2>Layout</h2>
+      <label class="radio"><input type="radio" name="layout" value="hero" checked> Neon Heist — full-bleed hero</label>
+      <label class="radio"><input type="radio" name="layout" value="hero3"> Hero + three photos</label>
+      <label class="radio"><input type="radio" name="layout" value="grid4"> Four-panel grid</label>
+    </section>
+
+    <section class="card">
+      <h2>Colour grade</h2>
+      <label class="radio"><input type="radio" name="grade" value="neon" checked> Neon — magenta + cyan</label>
+      <label class="radio"><input type="radio" name="grade" value="sunset"> Sunset — orange + pink</label>
+      <label class="radio"><input type="radio" name="grade" value="vice"> Vice — purple + teal</label>
+    </section>
+
+    <section class="card">
+      <h2>Post size</h2>
+      <label class="radio"><input type="radio" name="size" value="square" checked> 1080 × 1080 — feed square</label>
+      <label class="radio"><input type="radio" name="size" value="portrait"> 1080 × 1350 — portrait</label>
+      <label class="radio"><input type="radio" name="size" value="wide"> 1920 × 1080 — widescreen</label>
+    </section>
+
+    <section class="card">
+      <h2>Lettering</h2>
+      <label>Title
+        <input id="titleInput" type="text" value="GTA VI" maxlength="24">
+      </label>
+      <label>Tagline
+        <input id="tagInput" type="text" value="1 CAR. 1 LIGHT. 6 WAYS OUT." maxlength="48">
+      </label>
+      <label>Badge
+        <input id="badgeInput" type="text" value="V12 NEON HEIST" maxlength="24">
+      </label>
+    </section>
+  </aside>
+</main>
+
+<footer>
+  <p>Original art drawn in your browser — no Rockstar logo, artwork or font. Photos are read on your machine and never uploaded. Built for the make.fun “Make GTA 6 Cover Art” bounty.</p>
+</footer>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
