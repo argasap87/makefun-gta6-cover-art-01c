@@ -1,8 +1,8 @@
 # V12 Neon Heist — GTA VI Cover Art Maker
 
-[![Bounty: Make GTA 6 Cover Art](https://img.shields.io/badge/bounty-Make%20GTA%206%20Cover%20Art-ff2e88)](https://make.fun/bounty/gta6-cover-art-01)
-[![Prize: $250](https://img.shields.io/badge/prize-%2450%20places-29b6f6)](https://make.fun/bounty/gta6-cover-art-01)
-[![Status: Open](https://img.shields.io/badge/status-open-22c55e)](https://make.fun/bounty/gta6-cover-art-01)
+[![make.fun · gta6-cover-art-01](https://make.fun/badge/gta6-cover-art-01.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![rank](https://make.fun/badge/gta6-cover-art-01/argasap87/makefun-gta6-cover-art-01c/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
+[![reward](https://make.fun/badge/gta6-cover-art-01/argasap87/makefun-gta6-cover-art-01c/reward.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
 
 An offline web app that turns any photo and caption into GTA VI-style cover art, exported as a PNG to share. Entry for the [make.fun “Make GTA 6 Cover Art” bounty](https://make.fun/bounty/gta6-cover-art-01) (referral code `1ae1r9cj`).
 
